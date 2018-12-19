@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Davetiye Formu";
+}
+
+<div class="panel panel-success" >
+    <div class="panel-heading"><h4>Sende Davetlisin</h4>
+    </div>
+    <div class="panel-body">
+        <form action="/home/DavetiyeFormu" method="post" id="form">
+            <label>Ad :</label>
+            <input type="text" name="Ad" placeholder="Adınızı giriniz." />
+            <label>E-Posta :</label>
+            <input type="text" name="Eposta" placeholder="E-posta adresinizi giriniz." />
+            <label>Geliyor musun?</label>
+            <select id="myList" name="KatilmaDurumu">
+                <option value="true">Evet Geliyorum</option>
+                <option value="false">Hayır Üzgünüm</option>
+            </select>
+
+            <button type="submit" name="buton">Gönder</button>
+        </form>
+    </div>
+
+
+</div>
+

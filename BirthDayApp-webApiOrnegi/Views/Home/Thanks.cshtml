@@ -1,0 +1,20 @@
+﻿@model BirthDayApp_webApiOrnegi.Models.DavetiyeModel
+@{
+    ViewBag.Title = "Teşekkür Ederim";
+}
+
+<h1>Teşekkürler , @Model.Ad !</h1>
+
+<div class="lead">
+    @if (Model.KatilmaDurumu == true) {
+
+        @:Gelmene çk sevindim :)
+        @Html.Action("Katilanlar","Home")
+    }
+    else
+    {
+
+        @:Gelmeyecek olmana çok üzüldüm:(
+    }
+
+</div>

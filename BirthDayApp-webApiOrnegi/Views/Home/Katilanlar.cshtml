@@ -1,0 +1,16 @@
+﻿@model IEnumerable<BirthDayApp_webApiOrnegi.Models.DavetiyeModel>
+
+@if (Model.Count() == 1)
+{
+    @:partiye gelen ilk kişi sensin:D
+}
+else
+{
+    <hr />
+    <p>
+        @foreach (var item in Model)
+        {
+            <label class="label label-success">@item.Ad </label>
+        }
+    </p>
+}
